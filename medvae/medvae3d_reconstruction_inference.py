@@ -45,7 +45,7 @@ class MVAERecon(torch.nn.Module):
         self.decoded_latent = None
 
     def apply_transform(self, fpath: str, modality):
-        raise NotImplementedError(f"Rebuild transform for reconstruction.")
+        raise NotImplementedError("Rebuild transform for reconstruction.")
 
     def get_transform(self):
         return self.transform
